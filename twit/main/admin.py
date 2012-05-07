@@ -1,14 +1,14 @@
 from django.contrib import admin
-from main.models import perfil, twit
+from main.models import Perfil, Twit
 
 
-class twitAdmin(admin.ModelAdmin):
+class TwitAdmin(admin.ModelAdmin):
     list_display = ('nombre', 'status', 'creacion',)
 
 
-class perfilAdmin(admin.ModelAdmin):
-    list_display = ('usuario', 'imagen_perfil', 'cumple', 'ciudad', 'permisos', 'biografia',)
+class PerfilAdmin(admin.ModelAdmin):
+    list_display = ('usuario',  'cumple', 'ciudad', 'permisos', 'biografia',)
 
 
-admin.site.register(perfil, perfilAdmin)
-admin.site.register(twit, twitAdmin)
+admin.site.register(Perfil, PerfilAdmin)
+admin.site.register(Twit, TwitAdmin)
