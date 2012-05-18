@@ -121,9 +121,21 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable the admin:
      'django.contrib.admin',
      'main',
+     'registration',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )
+ACCOUNT_ACTIVATION_DAYS = 7
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'carlos.alcala.sanchez@gmail.com'
+EMAIL_HOST_PASSWORD = 'bbmorza23'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+LOGIN_REDIRECT_URL = "/"
+
+
+PASSWORD_MIN_LENGTH = 3
+PASSWORD_COMPLEXITY = {"UPPER":  1, "LOWER":  1, "DIGITS": 1}
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
@@ -153,3 +165,4 @@ LOGGING = {
         },
     }
 }
+AUTH_PROFILE_MODULE = "main.Perfil"

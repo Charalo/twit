@@ -1,0 +1,32 @@
+#titulo {
+	background-color: blue;
+	font-color: white;
+
+
+}
+body{
+	width: 90%;
+	margin:0 auto;}
+#content {
+	width:100%;
+	margin:0 auto;
+	background-color: lightgreen;
+
+}
+#content .eliminar {
+	width:100%;
+	margin:0 auto;
+	background-color: lightgreen;
+
+}
+#content:hover {
+background-color: yellow;
+width: 100%;
+}
+#footer {
+	width:100%;
+	margin:0 auto;
+	background-color: cyan;
+	text-align: right;
+
+}
